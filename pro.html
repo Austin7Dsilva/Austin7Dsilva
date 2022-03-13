@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+mark{
+            text-align: center;
+            background: linear-gradient(to left,
+                    Red,
+		white,
+		   black,
+		blue);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+.multicolour-text {
+            text-align: center;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+         
+        }
+.main{
+background: url('Unknown.jpeg');
+background-size: 100%;
+Color:white;
+Text-align:center;
+}
+</style>
+<body>
+    <div class="main" style="padding: 100px;">
+        <h2><u>MY HTML FORM</u></h2>
+        <label for="name"><mark>Full Name:</mark></label>
+        <input class="multicolour-text" type="text" name="name" placeholder="Enter your name"><br>
+
+        <label for="name">Age: </label>
+        <input type="number" name="name" placeholder="Enter your age"><br>
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br>
+
+        <label for="name">What do you not like: </label><br>
+        <input style="margin-left: -10%" type="checkbox" name="no-like"> Unemployment<br>
+        <input style="margin-left: 3em" type="checkbox" name="no-like"> Upfront Fees for Upskilling courses<br>
+        <input style="margin-left: -17%"type="checkbox" name="no-like"> Taxes<br>
+    </div>
+</body>
+</html>
