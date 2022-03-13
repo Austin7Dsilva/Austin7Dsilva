@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.main{
+background: url('Unknown.jpeg');
+Background-size:50%;
+}
+Mark{
+background: linear-gradient(to left, 
+	yellow,
+	green,
+	white,
+	red);
+ -webkit-background-clip: text;
+            color: transparent;
+}
+#multi{
+	background: linear-gradient(to left,
+			red,
+			black);
+	
+	
+}
+.divi{
+text-align: center; 
+color:white;
+}
+.submit-button{
+	width:25%;
+	display:block;
+	padding: 0.25rem;
+	margin-left: 400px;
+	background: yellow;
+	color:green;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.inp{
+min-height: 120px;
+width:30%;
+padding: 0.625rem;
+resize: vertical;
+border-radius: 10px;
+}
+</style>
+<head>
+<h1 style="text-align:center;"><mark>Jesus Loves you</mark></h1>
+</head>
+<body class="main">
+	<div class="divi">
+		<h2><u>Prayer Request</u></h2>
+		<label for="name">Full name: </label>
+		<input id="multi" type="text" name="name" placeholder="Enter your name" required/><br>
+		<label for="Age">Age: </label>
+		<input id="multi" type="number" name="Age" placeholder="Enter your age"><br>	
+		<label for="phone">Phone number: </label>
+		<input type="password" id="multi" placeholder="Enter your phone number" name="phone"><br>	
+		<label for="medium">Contact medium: </label><br>
+		<input type="radio" name="medium">Call
+		<input type="radio" name="medium">text<br>
+		<label for="religion">Mention your religion</label><br>
+		<select type="dropdown" name="religion">
+		<option disabled selected value>Select religion</option>
+		<option value="Hindu">Hindu</option>
+		<option value="Christian">Chrsitian</option>
+		<option value="Muslim">Muslim</option>
+		</select>
+		<div>
+		<p>Please tell us your prayer request</p>
+		<textarea class="inp" name="prayer" placeholder="please enter here"></textarea>
+		</div>
+		<input type="checkbox">Accept all terms and conditions<br>
+		<button type="submit" class="submit-button">Submit</button>
+	</div>
+</body>
+</html>
