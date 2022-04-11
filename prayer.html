@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="prayer.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Prayer Request</h1>
+          <p id="description" class="description text-center">
+            "Don't worry we will pray for you"
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+      <div class="form-group">
+        <label id="email-label"
+               for="e-mail">E-mail</label>
+        <input
+               type="text"
+               name="email"
+               id="email";
+               class="form-control";
+               placeholder="Enter your email address"
+               required
+               />
+          </div>
+      <div class="form-group">
+        <label id="number-label"
+               for="Number">
+          Age<span class="clue">(optional)</span>
+        </label>
+        <input
+               type="number"
+               name="Age"
+               id="number"
+               min="1"
+               max="99"
+               class="form-control"
+               placeholder="Enter you Age"
+               />
+          </div>
+          <div class="form-group">
+            <p>What is your current role?</p>
+            <select id="dropdown" name="role"
+                    class="form-control" required>
+              <option disabled selected value> Select role</option>
+              <option value="Student">Student</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="other">Other</option>
+              <option value="I prefer not to say"</option>
+            </select>
+          </div>
+           <div class="form-group">
+            <p>Would you recommend this to your friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="Obviously"
+                type="radio"
+                class="input-radio"
+                checked
+              />Obviously</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label
+            >
+             <label>
+               <input
+                      name="user-recommend"
+                      value="Not yet decided"
+                      type="radio"
+                      class="input-radio"
+                      />Not yet decided</label>
+          </div>
+         <div class="form-group">
+            <p>
+              What would you like anything more?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="Donation"
+                type="checkbox"
+                class="input-checkbox"
+              />Donation</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="live prayer"
+                type="checkbox"
+                class="input-checkbox"
+              />live prayer</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="online music"
+                type="checkbox"
+                class="input-checkbox"
+              />online music</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="counselling"
+                type="checkbox"
+                class="input-checkbox"
+              />counselling</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="get membership"
+                type="checkbox"
+                class="input-checkbox"
+              />get membership</label
+            >
+          </div>      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
