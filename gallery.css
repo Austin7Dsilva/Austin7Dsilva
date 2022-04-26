@@ -1,0 +1,80 @@
+body{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(1, 0, 0);
+  }
+  h1{
+    text-align: center;
+    color: white;
+    text-size-adjust: x-large;
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+  }
+  
+  .panel{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 700ms ease-in;
+  }
+  
+  .panel.active{
+    flex: 5;
+    transition: all 1s;
+    transition-timing-function: ease;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border: 5px inset hsl(120, 65%, 50%);
+}
+  
+  .panel h3{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .panel.active h3{
+    opacity: 1;
+    transition: opacity 300ms ease-in 400ms;
+  }
+  
+  #panel-1{
+    background-image: url("https://m.media-amazon.com/images/I/71e11bjxCNL._SL1500_.jpg");   
+  }
+  
+  #panel-2{
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/White-Tiger-HD-Background.jpg");   
+  }
+  
+  #panel-3{
+    background-image: url("https://www.hdnicewallpapers.com/Walls/Big/Other%20Animals/Rhinoceros_in_Forest_5K_Wallpaper.jpg");  
+  }
+  
+  #panel-4{
+    background-image: url("https://media.istockphoto.com/photos/background-elephant-picture-id479667835?k=20&m=479667835&s=612x612&w=0&h=Zy5JdCC9SqOL2Tf5SHSM0VdjaKdn2xt_jZi8SOy-USY=");   
+  }
+  
+  #panel-5{
+    background-image: url("https://www.wallpapers13.com/wp-content/uploads/2019/09/Animals-Black-Bear-Hunting-Fish-In-Russian-River-symbol-for-Russia-Desktop-Wallpaper-HD-for-your-computer-840x525.jpg");   
+  }
+  
