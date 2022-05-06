@@ -1,0 +1,61 @@
+body{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/303/229/316/photo-of-man-in-motorcycle-suit-riding-on-red-and-white-sport-bike-wallpaper-preview.jpg');
+  background-size: 100%;
+}
+.input-name{
+  border: 2px solid rgb(149, 146, 146);
+    color: white;
+    font-size: medium;
+    background-color: rgba(225, 36, 36, 0.943);
+    border-radius: 20px;
+    opacity: 0.9;
+}
+.bank-balance-display{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .bank-balance-display table {
+    border: 2px solid black;
+  }
+  
+  table, tr, th, td{
+    border: 2px solid black;
+    color: white;
+    font-size: medium;
+    background-color: black;
+    border-radius: 20px;
+    opacity: 0.9;
+  }
+  
+  td, th{
+    padding: 10px;
+    border-radius: 30px;
+  }
+  
+  td input{
+    width: 75%;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+  
+  .bank-balance-display button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .bank-balance-display button:hover{
+    background-color: bisque;
+    color: red;
+    cursor: progress;
+  }
+  .display-updated-balance{
+    color: aliceblue;
+  }
