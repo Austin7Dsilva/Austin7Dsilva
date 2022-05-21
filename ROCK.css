@@ -1,0 +1,59 @@
+h1
+{
+    background: linear-gradient(to right,#f32170,#ffeb07,#2196f3,#ff00eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+.button-column {
+	display: flex;
+	gap: 3rem;
+	justify-content: space-evenly;
+}
+
+.icon {
+	/* background-color: aquamarine; */
+	color: #ffcc99;
+	font-size: 4rem;
+	width: 4rem;
+	height: 4rem;
+	padding: 1rem;
+}
+
+.choice-container {
+	display: flex;
+	justify-content: space-evenly;
+	/* border: 1px solid skyblue; */
+	text-align: center;
+	padding: 1rem;
+	max-width: 950px;
+	margin: auto auto;
+}
+
+.row {
+	/* border: 1px solid black; */
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+
+.winner {
+	background-color: lightgreen;
+}
+
+.loser {
+	background-color: rgb(238, 67, 67);
+}
+
+.draw {
+	background-color: hsl(60, 96%, 64%);
+}
+
+.button .icon {
+	transition: transform 100ms ease;
+}
+.button .icon:hover {
+	transform: scale(1.1);
+}
