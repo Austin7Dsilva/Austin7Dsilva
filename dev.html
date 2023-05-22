@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="dev.css" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Slideshow Plugin">
+  <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+  <title>Slideshow Plugin</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="certif.css">
 </head>
 <body>
     <link rel="stylesheet"
@@ -23,7 +30,10 @@
       <a href="#welcome-section">About</a>
     </li>
     <li>
-      <a href="#projects">Work</a>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#Certifications">Certifications</a>
     </li>
     <li>
       <a href="#contact">Contact</a>
@@ -278,6 +288,111 @@
         <span class="glow-on-hover">HTML5</span>
       </div>
    </div>
+</section>
+<section id="Certifications" class="Certifications-section">
+
+  <h1 class="main-title"></h1>
+  <p class="copy-title" style="display: none;">Certifications</p>
+
+  <div class="slideshow">
+
+    <div class="slides-box">
+
+      <!-- https://picsum.photos/ -->
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_3.52.26_PM.png?updatedAt=1684750956642" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.07.12_PM.png?updatedAt=1684755438892" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.07.41_PM.png?updatedAt=1684755467395" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.13.20_PM.png?updatedAt=1684755806914" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.14.03_PM.png?updatedAt=1684755850504" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.16.30_PM.png?updatedAt=1684755998304" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.17.15_PM.png?updatedAt=1684756042376" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.18.43_PM.png?updatedAt=1684756131942" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.19.43_PM.png?updatedAt=1684756192277" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.20.12_PM.png?updatedAt=1684756219388" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.20.53_PM.png?updatedAt=1684756260165" alt="image" title="image">
+      </div>
+
+      <div class="slide">
+        <img src="https://ik.imagekit.io/ugdlmxlzt/Screenshot_2023-05-22_at_5.21.21_PM.png?updatedAt=1684756289877" alt="image" title="image">
+      </div>
+
+    </div>
+
+    <div class="slideshow-buttons">
+
+      <div class="prev-btn">&larr;</div>
+      <div class="next-btn">&rarr;</div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="certif.js"></script>
+
+  <script>
+
+    $(document).ready(function () {
+
+      $('.slideshow').slideshowPlugin({
+        // Parameters
+        effect: 'sliding',
+        slideSpeed: 800,
+        ratio: "keep",
+      });
+      // Typing Text
+      var content = $('.copy-title').text();
+
+      var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+      $(ele).hide().appendTo('.main-title').each(function (i) {
+        $(this).delay(100 * i).css({
+          display: 'inline',
+          opacity: 0
+        }).animate({
+          opacity: 1
+        }, 100);
+      });
+      // End Typing text
+
+    });
+  </script>
+
 </section>
 <section id="contact" class="contact-section">
   <div class="contact-section-header">

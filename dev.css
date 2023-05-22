@@ -144,16 +144,19 @@ img {
   padding: 10rem 2rem;
   background: var(--main-blue);
 }
+
 .Skills-section{
   display: flex;
   Justify-content: center;
   padding: 10rem 2rem;
   background-image: linear-gradient(to right, #870000, #190a05);
+  padding-top: 35px !important;
 }
 .Skill-head{
   display: grid;
     gap: 15px;
     grid-template-columns: auto auto auto auto auto auto auto auto;
+    margin-top: 25px;
 }
 .glow-on-hover {
     padding: 10px;
