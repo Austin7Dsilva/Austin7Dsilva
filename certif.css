@@ -12,6 +12,7 @@ body {
 .Certifications-section{
     Justify-content: center;
     padding: 3rem 2rem;
+    padding-top: 4%;
 }
 .Certifications-section h1 {
     text-transform: uppercase;
