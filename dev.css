@@ -160,7 +160,7 @@ transition: all 0.4s ease 0s;
   Justify-content: center;
   padding: 10rem 2rem;
   background-image: linear-gradient(to right, #870000, #190a05);
-  padding-top: 35px !important;
+  padding-top: 75px !important;
 }
 .Skill-head{
   display: grid;
