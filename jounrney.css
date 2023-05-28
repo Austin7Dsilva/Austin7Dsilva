@@ -6,7 +6,7 @@
   min-height: 100vh;
   align-content: center;
   gap: 2rem;
-  padding: 2rem;
+  padding: 8rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: var(--bgColor);
@@ -111,7 +111,7 @@ ul li .descr {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
-  text-align: justify;
+  text-align: initial;
 }
 .bodyy  ul li .title {
   overflow: hidden;
