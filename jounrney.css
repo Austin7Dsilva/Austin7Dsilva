@@ -26,7 +26,7 @@
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(60rem, 90%);
+  width: min(115rem, 90%);
   margin-inline: auto;
 }
 
@@ -111,6 +111,7 @@ ul li .descr {
   background: var(--bgColor);
   position: relative;
   padding-inline: 1.5rem;
+  text-align: justify;
 }
 .bodyy  ul li .title {
   overflow: hidden;
