@@ -1,0 +1,444 @@
+@charset "UTF-8";
+body {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.logo-image {
+  display: grid;
+  justify-content: center;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding-right: 60px;
+  line-height: 70px;
+  text-decoration: none;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ˅";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background: #FFFFFF;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.first-nav-heading {
+  font: normal normal 900 40px/54px Nunito Sans;
+}
+
+.nav1-head {
+  display: flex;
+  gap: 5%;
+}
+
+#nav-2 {
+  margin-top: 59px;
+  position: relative;
+  z-index: 1;
+  background: #F8FAFC 0% 0% no-repeat padding-box;
+}
+#nav-2 h1 {
+  font: normal normal bold 35px/47px Nunito Sans;
+  text-align: center;
+  padding-bottom: 60px;
+  margin: 0;
+  padding-top: 10%;
+}
+
+.nav1-sub-heading {
+  width: 50%;
+  padding-top: 50px;
+}
+.nav1-sub-heading span {
+  font: normal normal normal 18px/24px Nunito Sans;
+}
+.nav1-sub-heading button {
+  display: block;
+  background: #1492E6 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 33px;
+  opacity: 1;
+  border: none;
+  padding: 17px 49px 17px 50px;
+  font: normal normal 600 23px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-top: 60px;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #262626;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 798px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 799px) {
+  .nav-list li a {
+    color: #000000;
+    text-align: left;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+.nav2-head {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav2-sub {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 18px;
+  width: 308px;
+  height: 290px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav2-sub h3 {
+  text-align: center;
+  font: normal normal 600 23px/31px Nunito Sans;
+}
+.nav2-sub span {
+  font-family: "Nunito Sans";
+}
+
+#nav-3 {
+  background: #F8FAFC 0% 0% no-repeat padding-box;
+  padding-top: 186px;
+}
+#nav-3 h1 {
+  font: normal normal bold 35px/47px Nunito Sans;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 115px;
+}
+
+.nav3-head {
+  display: flex;
+  gap: 50px;
+}
+.nav3-head h3 {
+  font: normal normal 600 23px/31px Nunito Sans;
+}
+.nav3-head span {
+  font-family: "Nunito Sans";
+}
+
+#nav-4 h1 {
+  font: normal normal bold 35px/47px Nunito Sans;
+  text-align: center;
+  margin: 0;
+  margin-top: 138px;
+  margin-bottom: 60px;
+}
+#nav-4 .listelements {
+  list-style: none;
+  padding-bottom: 30px;
+}
+#nav-4 .listelements h4 {
+  font: normal normal bold 24px/32px Nunito Sans;
+}
+#nav-4 .listelements span {
+  font: normal normal normal 21px/28px Nunito Sans;
+}
+#nav-4 .listelements button {
+  display: block;
+  background: #1492E6 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 33px;
+  opacity: 1;
+  border: none;
+  padding: 17px 49px 17px 50px;
+  font: normal normal 600 23px/31px Nunito Sans;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+#nav-4 .listelements:nth-child(even) {
+  padding-left: 50%;
+}
+#nav-4 .listelements:nth-child(odd) {
+  padding-right: 50%;
+}
+
+.timeline {
+  display: flex;
+  gap: 40px;
+}
+
+#nav-6 h1 {
+  font: normal normal bold 35px/47px Nunito Sans;
+  text-align: center;
+  margin: 0;
+  padding-top: 298px;
+  padding-bottom: 142px;
+}
+
+.nav6-head {
+  display: flex;
+  justify-content: space-around;
+}
+.nav6-head .nav6-sub {
+  display: grid;
+}
+.nav6-head .nav6-sub span {
+  text-align: center;
+  font: normal normal bold 18px/24px Nunito Sans;
+}
+
+footer {
+  margin-top: 190px;
+  height: 369px;
+  background: #000000 0% 0% no-repeat padding-box;
+  color: #FFFFFF;
+  font: normal normal bold 18px/24px Nunito Sans;
+}
+footer span {
+  padding-top: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#nav-5 h1 {
+  font: normal normal bold 35px/47px Nunito Sans;
+  text-align: center;
+  margin: 0;
+  padding-top: 190px;
+  padding-bottom: 76px;
+}
+#nav-5 .nav5-sub1 {
+  display: flex;
+  gap: 13px;
+  padding-bottom: 50px;
+}
+#nav-5 .nav5-sub1 h2 {
+  font: normal normal bold 28px/47px Nunito Sans;
+  text-align: center;
+}
+
+.nav5-head {
+  height: 363px;
+  background: #F8FAFC 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 42px;
+  padding: 40px 0 0 40px;
+}
+.nav5-head .nav5-sub2 {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 30px;
+  width: 285px;
+  height: 280px;
+}
+.nav5-head .nav5-sub2 .info-head {
+  display: flex;
+  justify-content: space-around;
+}
+.nav5-head .nav5-sub2 .info-head .info-text {
+  display: grid;
+  padding-left: 10px;
+}
+.nav5-head .nav5-sub2 .info-head .info-text h3 {
+  margin: 0;
+  font: normal normal 600 12px/16px Nunito Sans;
+}
+.nav5-head .nav5-sub2 .info-head .info-text span {
+  font-family: "Nunito Sans";
+  font-size: 12px;
+}
+.nav5-head .nav5-sub2 .info-head .star-image {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.user-text-info {
+  padding-top: 30px;
+  display: flex;
+  font: normal normal normal 13px/18px Nunito Sans;
+}
+
+.user-info {
+  padding: 30px;
+}
+
+.nav5-content {
+  display: flex;
+  padding-left: 80px;
+  gap: 25px;
+}
+
+.arrow {
+  border: solid #707070;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-head {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 57%;
+  left: 3%;
+}
+.arrow-head .button {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 7px 17px rgba(0, 0, 0, 0.1607843137);
+  border: none;
+  color: white;
+  width: 62px;
+  height: 63px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.custom-shape-divider-top-1685367110 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  background: #F8FAFC 0% 0% no-repeat padding-box;
+}
+
+.custom-shape-divider-top-1685367110 svg {
+  position: relative;
+  display: block;
+  width: 116%;
+  height: 247px;
+}
+
+.custom-shape-divider-top-1685367110 .shape-fill {
+  fill: #FFFFFF;
+}
+
+#nav-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.wave-back {
+  position: relative;
+  bottom: 11.8rem;
+}
+
+.nav1-head img {
+  z-index: -1;
+}/*# sourceMappingURL=project.css.map */
