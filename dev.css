@@ -436,7 +436,10 @@ input:focus {
 }
 .content .feedback-form * {
   margin-bottom: 16px;
-  box-shadow: 0px 3px 5px 2px white;
+  box-shadow: 0 0 5px #ff0055,
+  0 0 5px #ff0055,
+  0 0 5px #ff0055,
+  0 0 25px #ff0055;
 }
 
 @media screen and (max-width: 674px) {
