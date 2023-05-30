@@ -453,6 +453,22 @@
 
 </section>
 <section id="contact" class="contact-section">
+  <div class="feedback-survey content">
+    <div class="feedback-description">
+      <span class="title">
+        Please provide you Feeback
+      </span>
+      <p class="subtitle">
+        I will work on it
+      </p>
+    </div>
+    <form class="feedback-form" onsubmit="sendEmail(); reset(); return false;">
+      <input class="feedback-form__name" type="text" id="user_name" placeholder="Name" required="" />
+      <input class="feedback-form__email" type="email" id="user_email" placeholder="Email" required="" />
+      <textarea class="feedback-form__message" cols="30" name="text" id="user_message" placeholder="Message" required="" rows="5"></textarea>
+      <button class="feedback-form__submit">Sumbit</button>
+    </form>
+  </div>
   <div class="contact-section-header">
     <h2>You can find me on</h2>
   </div>
@@ -467,6 +483,26 @@
       ><i class="fab fa-linkedin-in"></i> Follow me</a
     >
   </div>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+     function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "austinofficial007@gmail.com",
+        Password : "************",
+        To : 'austinofficial007@gmail.com',
+        From : document.getElementById("user_email").value,
+        Subject : "This is the subject",
+        Body : "Name:" + document.getElementById("user_name").value
+        + "<br> Email: " + document.getElementById("user_email").value
+        + "<br> Message: " + document.getElementById("user_message").value
+    }).then(
+      message => alert("Feedback sumbitted successfully")
+    );
+     }
+  </script>
 </section>
 </body>
 </html>
