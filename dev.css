@@ -459,3 +459,26 @@ input:focus {
 .feedback-survey .title{
     font-size: 50px;
 }
+
+@media screen and (max-width: 1024px) {
+  body{
+    width: fit-content;
+  }
+  section{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .projects-grid {
+    grid-gap: 12rem;
+    width: 85%;
+  }
+  .projects-section-header{
+    padding-bottom: 5%;
+  }
+  .project-image {
+    border-radius: 40px 40px 0 0;
+  }
+  .project{
+    border-radius: 40px;
+  }
+}
