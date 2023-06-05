@@ -182,7 +182,7 @@ transition: 0.5s;
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 17rem 2rem;
   background: var(--main-blue);
 }
 
@@ -191,18 +191,19 @@ transition: 0.5s;
   Justify-content: center;
   padding: 10rem 2rem;
   background-image: linear-gradient(to right, #870000, #190a05);
-  padding-top: 75px !important;
+  padding-top: 9% !important;
+  min-height: 100vh;
 }
 .Skill-head{
   display: grid;
-    gap: 15px;
+    gap: 50px;
     grid-template-columns: auto auto auto auto auto auto auto auto;
-    margin-top: 25px;
+    margin-top: 7%;
 }
 .glow-on-hover {
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     border: none;
     outline: none;
     color: #fff;
@@ -210,6 +211,7 @@ transition: 0.5s;
     position: relative;
     z-index: 0;
     border-radius: 10px;
+    font-size: 2rem;
 }
 
 .glow-on-hover:before {
@@ -348,6 +350,7 @@ transition: 0.5s;
   width: 100%;
   padding: 0 2rem;
   background: var(--main-gray);
+  min-height: 100vh;
 }
 
 .contact-section-header > h2 {
@@ -593,4 +596,12 @@ input:focus {
   .welcome-section section{
       width: 70%;
   }
+}
+
+.projects-section h2{
+  padding-bottom: 30px;
+}
+
+.Skills-section h2{
+  font-size: 6.2rem;
 }
