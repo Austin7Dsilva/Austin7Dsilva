@@ -196,14 +196,12 @@ transition: 0.5s;
 }
 .Skill-head{
   display: grid;
-    gap: 50px;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    gap: 35px;
+    grid-template-columns: auto auto auto auto auto auto ;
     margin-top: 7%;
 }
 .glow-on-hover {
     padding: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
     border: none;
     outline: none;
     color: #fff;
