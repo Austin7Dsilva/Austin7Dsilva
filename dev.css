@@ -264,7 +264,7 @@ transition: 0.5s;
 
 @media (max-width: 28.75em) {
   .projects-section-header {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 .projects-grid {
@@ -454,12 +454,14 @@ input:focus {
   align-items: center;
   max-width: 980px;
   justify-content: center;
+  padding-bottom: 5%;
 }
 .content .feedback-description {
   padding-bottom: 72px;
 }
 .content .feedback-description .subtitle {
   font-size: 16px;
+  font-style: italic;
 }
 .content .feedback-form {
   min-width: 280px;
