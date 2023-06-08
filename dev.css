@@ -605,3 +605,7 @@ input:focus {
 .Skills-section h2{
   font-size: 6.2rem;
 }
+
+.descr a{
+  color: black;
+}
