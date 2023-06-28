@@ -609,3 +609,7 @@ input:focus {
 .descr a{
   color: black;
 }
+
+.ajax{
+  object-fit: fill;
+}
