@@ -186,3 +186,9 @@ ul li .descr::before {
 .bodyy .credits a {
   color: var(--color);
 }
+
+@media (max-width:1024px){
+  .bodyy{
+    padding: 7rem;
+  }
+}
