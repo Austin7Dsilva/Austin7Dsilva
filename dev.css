@@ -190,7 +190,7 @@ transition: 0.5s;
   display: flex;
   Justify-content: center;
   padding: 10rem 2rem;
-  background-image: linear-gradient(to right, #870000, #190a05);
+  background: black;
   padding-top: 9% !important;
   min-height: 100vh;
 }
@@ -201,7 +201,7 @@ transition: 0.5s;
     margin-top: 7%;
 }
 .glow-on-hover {
-    padding: 15px;
+    padding: 25px;
     border: none;
     outline: none;
     color: #fff;
@@ -612,4 +612,21 @@ input:focus {
 
 .ajax{
   object-fit: fill;
+}
+
+.skilltitle{
+  margin-top: 4%;
+  display: none;
+}
+
+.glow-on-hover:hover{
+  .skilltitle{
+    display: block;
+  }
+}
+
+.Skill-head a img{
+  height: 75px;
+  width: 85px;
+  margin: auto;
 }
