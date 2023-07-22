@@ -25,7 +25,7 @@ html{
   img {
     max-width: 100%;
     display: block;
-    height: auto;
+    height: 60vh;
     margin: 0 auto;
     border-color: silver;
       border-width: 10px;
@@ -68,3 +68,8 @@ html{
     color: blue;
   }
   
+@media(max-width:1024px){
+  #tribute-info{
+    padding: 5%;
+  }
+}
