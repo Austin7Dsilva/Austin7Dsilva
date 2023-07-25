@@ -499,7 +499,7 @@ input:focus {
   }
   .projects-grid {
     grid-gap: 12rem;
-    width: 85%;
+    width: fit-content;
   }
   .projects-section-header{
     padding-bottom: 5%;
@@ -509,6 +509,8 @@ input:focus {
   }
   .project{
     border-radius: 40px;
+    width: 600px;
+    height: 600px;
   }
 }
 
