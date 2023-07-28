@@ -116,7 +116,7 @@ img {
 }
 
 .nav-list a {
-  color: #fff !important;
+  color: #f39102 !important;
 text-transform: uppercase;
 text-decoration: none;
 background: #33353d;
@@ -124,7 +124,7 @@ padding: 20px;
 display: inline-block;
 transition: all 0.4s ease 0s;
 
---c: #1095c1; /* the color */
+--c: #f39102; /* the color */
 --b: .1em;    /* border length*/
 --d: 20px;    /* the cube depth */
 
@@ -183,7 +183,7 @@ transition: 0.5s;
 .projects-section {
   text-align: center;
   padding: 17rem 2rem;
-  background: var(--main-blue);
+  background: black;
 }
 
 .Skills-section{
@@ -288,7 +288,8 @@ transition: 0.5s;
 .project {
   background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #ccc;
 }
 
 .code {
@@ -304,11 +305,13 @@ transition: 0.5s;
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
+  border-radius: 20px 20px 0 0px;
 }
 
 .project-title {
   font-size: 2rem;
   padding: 2rem 0.5rem;
+  color: #f39102;
 }
 
 .btn {
@@ -347,12 +350,13 @@ transition: 0.5s;
   text-align: center;
   width: 100%;
   padding: 0 2rem;
-  background: var(--main-gray);
+  background: black;
   min-height: 100vh;
 }
 
 .contact-section-header > h2 {
   font-size: 3rem;
+  color: #f39102;
 }
 
 @media (max-width: 28.75em) {
@@ -456,6 +460,7 @@ input:focus {
 }
 .content .feedback-description {
   padding-bottom: 72px;
+  color: #f39102;
 }
 .content .feedback-description .subtitle {
   font-size: 16px;
@@ -602,10 +607,12 @@ input:focus {
 
 .projects-section h2{
   padding-bottom: 30px;
+  color: #f39102;
 }
 
 .Skills-section h2{
   font-size: 6.2rem;
+  color: #f39102;
 }
 
 .descr a{
@@ -619,6 +626,7 @@ input:focus {
 .skilltitle{
   margin-top: 4%;
   display: none;
+  color: #f39102;
 }
 
 .glow-on-hover:hover{
@@ -667,4 +675,8 @@ input:focus {
 #button.show {
   opacity: 1;
   visibility: visible;
+}
+
+.contact-links a{
+  color: #f39102;
 }

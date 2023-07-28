@@ -14,10 +14,11 @@ body {
     padding: 3rem 2rem;
     padding-top: 8%;
     min-height: 100vh;
+    background-color: black;
 }
 .Certifications-section h1 {
     text-transform: uppercase;
-    color: white;
+    color: #f39102;
     letter-spacing: 2px;
     font-size: 45px;
     min-height: 40px;
