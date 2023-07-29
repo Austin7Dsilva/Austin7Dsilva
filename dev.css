@@ -430,7 +430,7 @@ textarea,
 input {
   border: none;
   background-image: none;
-  background-color: #fff;
+  background-color: black;
   box-shadow: none;
   font-size: 14px;
   padding: 16px;
@@ -474,10 +474,10 @@ input:focus {
 }
 .content .feedback-form * {
   margin-bottom: 16px;
-  box-shadow: 0 0 5px #ff0055,
-  0 0 5px #ff0055,
-  0 0 5px #ff0055,
-  0 0 25px #ff0055;
+  box-shadow: 0 0 5px #f39102,
+  0 0 5px #f39102,
+  0 0 5px #f39102,
+  0 0 25px #f39102;
 }
 
 @media screen and (max-width: 674px) {
