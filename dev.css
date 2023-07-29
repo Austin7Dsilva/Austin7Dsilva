@@ -680,3 +680,8 @@ input:focus {
 .contact-links a{
   color: #f39102;
 }
+
+#greeting{
+  text-align: left;
+  padding-left: 18px;
+}
