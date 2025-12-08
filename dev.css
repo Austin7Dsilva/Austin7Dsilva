@@ -529,20 +529,31 @@ footer {
         padding: 1rem;
     }
     .nav-links {
-        display: none;
+        /* display: none; Removed to allow transition */
+        display: flex; /* Always flex, but hidden via height/opacity */
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: white; /* Mobile menu white */
         flex-direction: column;
-        padding: 20px;
+
+        /* Transition properties */
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        padding: 0 20px; /* Padding animated from 0 to avoid jump */
+
         text-align: center;
         border-bottom: 1px solid var(--glass-border);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.6s ease-in-out; /* Smooth transition */
     }
     .nav-links.active {
-        display: flex;
+        /* display: flex;  Matches existing logic but now we animate properties */
+        max-height: 500px; /* Limit large enough for content */
+        opacity: 1;
+        padding: 20px; /* Restore padding */
     }
     .menu-toggle {
         display: block;
